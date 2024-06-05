@@ -1,0 +1,30 @@
+{
+    "servicos": [
+        {
+            "titulo": "Corte de Cabelo Masculino",
+            "descricao": "Corte de cabelo básico para homens",
+            "preco": 25.00,
+            "imagem": "img/corte_cabelo.jpg"
+        },
+        {
+            "titulo": "Barba",
+            "descricao": "Barba feita com navalha",
+            "preco": 15.00,
+            "imagem": "img/barba.jpg"
+        }
+    ],
+    "produtos": [
+        {
+            "titulo": "Shampoo",
+            "descricao": "Shampoo para cabelos masculinos",
+            "preco": 10.00,
+            "imagem": "img/shampoo.jpg"
+        },
+        {
+            "titulo": "Gel para Cabelo",
+            "descricao": "Gel modelador para cabelos masculinos",
+            "preco": 8.00,
+            "imagem": "img/gel_cabelo.jpg"
+        }
+    ]
+}
