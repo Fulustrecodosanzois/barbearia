@@ -116,27 +116,30 @@ document.addEventListener('DOMContentLoaded', function () {
         section.innerHTML = ''; // Limpar o conteúdo existente antes de renderizar os novos itens
         items.forEach(item => {
             const productCard = `
-                <section class="d-flex justify-content-center align-items-center">
-                    <div class="card" style="max-width: 95%;">
-                        <div class="row g-0">
-                            <div class="col-4">
-                                <img src="${item.imagem}" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-8">
-                                <div class="card-body d-flex align-items-end flex-column">
-                                    <h5 class="card-title">${item.titulo}</h5>
-                                    <p class="card-text">${item.descricao}</p>
-                                    <p class="card-text fw-bold">R$ ${item.preco.toFixed(2)}</p>
-                                    <div class="">
-                                        <button class="btn btn-primary fw-bold p-3 rounded-pill add-to-cart-btn">
-                                            Adicionar <i class="fas fa-cart-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section class="d-flex justify-content-center align-items-center">
+    <div class="card" style="width: 95%;">
+        <div class="row g-0">
+            <div class="col-md-4 col-12">
+                <img src="${item.imagem}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="card-body d-flex align-items-end flex-column">
+                    <h5 class="card-title">${item.titulo}</h5>
+                    <p class="card-text">${item.descricao}</p>
+                    <p class="card-text fw-bold">R$ ${item.preco.toFixed(2)}</p>
+                    <div class="">
+                        <button class="btn btn-primary fw-bold p-3 rounded-pill add-to-cart-btn">
+                            Adicionar <i class="fas fa-cart-plus"></i>
+                        </button>
                     </div>
-                </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
             `;
             section.innerHTML += productCard; // Adicionar o card do produto ao conteúdo da seção
         });
