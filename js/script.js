@@ -117,26 +117,26 @@ document.addEventListener('DOMContentLoaded', function () {
         items.forEach(item => {
             const productCard = `
             <section class="d-flex justify-content-center align-items-center">
-    <div class="card" style="width: 95%;">
-        <div class="row g-0">
-            <div class="col-md-4 col-12">
-                <img src="${item.imagem}" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8 col-12">
-                <div class="card-body d-flex align-items-end flex-column">
-                    <h5 class="card-title">${item.titulo}</h5>
-                    <p class="card-text">${item.descricao}</p>
-                    <p class="card-text fw-bold">R$ ${item.preco.toFixed(2)}</p>
-                    <div class="">
-                        <button class="btn btn-primary fw-bold p-3 rounded-pill add-to-cart-btn">
-                            Adicionar <i class="fas fa-cart-plus"></i>
-                        </button>
+                <div class="card" style="width: 95%;">
+                    <div class="d-flex flex-row ">
+                        <div class="col-5">
+                            <img src="${item.imagem}" class="rounded-start" alt="..." style="width: 100%;">
+                        </div>
+                        <div class="">
+                            <div class="card-body d-flex align-items-end flex-column">
+                                <h5 class="card-title">${item.titulo}</h5>
+                                <p class="card-text">${item.descricao}</p>
+                                <p class="card-text fw-bold">R$ ${item.preco.toFixed(2)}</p>
+                                <div class="">
+                                    <button class="btn btn-primary fw-bold p-3 rounded-pill add-to-cart-btn">
+                                Adicionar <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
 
         
